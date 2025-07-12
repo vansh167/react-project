@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": "bce7",
+      "name": "vansh"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "What is the capital of France?",
+      "options": [
+        "Paris",
+        "London",
+        "Berlin",
+        "Madrid"
+      ],
+      "answer": "Paris"
+    },
+    {
+      "id": "2",
+      "question": "Which is the largest ocean?",
+      "options": [
+        "Atlantic",
+        "Indian",
+        "Pacific",
+        "Arctic"
+      ],
+      "answer": "Pacific"
+    },
+    {
+      "id": "3",
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Venus"
+      ],
+      "answer": "Mars"
+    },
+    {
+      "id": "4",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Mark Twain",
+        "Leo Tolstoy"
+      ],
+      "answer": "William Shakespeare"
+    },
+    {
+      "id": "5",
+      "question": "What is the boiling point of water?",
+      "options": [
+        "90°C",
+        "50°C",
+        "100°C",
+        "120°C"
+      ],
+      "answer": "100°C"
+    },
+    {
+      "id": "6",
+      "question": "Which gas do plants use for photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "id": "7",
+      "question": "How many continents are there?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "7"
+    },
+    {
+      "id": "8",
+      "question": "Which is the smallest prime number?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "2"
+    },
+    {
+      "id": "9",
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Trainer Marking Language",
+        "Hyper Text Markup Language",
+        "Hyper Text Marketing Language",
+        "High Text Markup Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "id": "10",
+      "question": "Which country is famous for the Great Wall?",
+      "options": [
+        "India",
+        "China",
+        "Japan",
+        "Thailand"
+      ],
+      "answer": "China"
+    },
+    {
+      "id": "11",
+      "question": "Which is the hardest natural substance on Earth?",
+      "options": [
+        "Gold",
+        "Iron",
+        "Diamond",
+        "Platinum"
+      ],
+      "answer": "Diamond"
+    },
+    {
+      "id": "12",
+      "question": "What is the currency of Japan?",
+      "options": [
+        "Yen",
+        "Won",
+        "Dollar",
+        "Rupee"
+      ],
+      "answer": "Yen"
+    }
+  ]
+}
