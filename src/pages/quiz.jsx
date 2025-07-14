@@ -18,7 +18,7 @@ const Quiz = () => {
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
-q
+
   return (
     <>
       <Header />
@@ -36,8 +36,8 @@ q
           <div className="welcome3">
             {currentQuestion ? (
               <div>
-                <h3>{currentQuestion.question}</h3>
-                <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+                <h2>{currentQuestion.question}</h2>
+                <ul style={{ listStyle: 'none', paddingLeft:"10px", }}>
                   {currentQuestion.options.map((option, i) => (
                     <li key={i}>
                       <label>
