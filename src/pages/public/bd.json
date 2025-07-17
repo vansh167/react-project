@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "profile": "",
+      "name": "John Doe",
+      "age": 28,
+      "salary": 50000,
+      "role": "Frontend Developer",
+      "languages": ["React.js", "JS"]
+    }, 
+    {
+      "id": 2,
+      "profile": "",
+      "name": "Jane Smith",
+      "age": 32,
+      "salary": 60000,
+      "role": "Backend Developer",
+      "languages": ["HTML", "CSS"]
+    }
+  ]
+}
