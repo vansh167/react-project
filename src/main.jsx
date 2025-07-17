@@ -1,22 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import Path from './component/nav'
-import Timer from './pages/timer'
-
-// import App from './pages/mainq'
-// import Welcome from './pages/quiz'
-// import App from './pages/example'
-
-// import UseState from './component/useState'
-
-// import App from './App'
-
-
-
+import Path from './component/nav'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Path/> */}
-  <Timer/>
-    {/* <App/> */}
+    <Path/>
+    
   </StrictMode>
 )
