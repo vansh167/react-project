@@ -1,0 +1,47 @@
+.timer{
+    text-align: center;
+    margin-top: 20px;
+    font-size:  40px;
+}
+h1{
+    color: darkgray;
+}
+h2{
+    color: darkgrey;
+    font-weight:400;
+    margin-bottom: -130px;
+}
+h5{
+    color: darkgrey;
+    font-weight:400;
+    margin-bottom: -50px;
+}
+body{
+background-color: rgb(8, 8, 8); 
+}
+.tme{
+    display: flex;
+}
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color:rgb(41, 38, 38);
+    border-color: rgb(9, 8, 8);
+}
+.btn1{
+    font-size:30px;
+    margin-right: 5px;
+    background-color: rgb(181, 246, 83);
+}
+.btn2{
+    font-size:25px;
+    margin-right: 5px;
+    
+}
+.btn3{
+    font-size:30px;
+    margin-right: 5px;
+    color: white;
+}
