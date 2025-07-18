@@ -1,41 +1,25 @@
-// import { useState } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import Path from './component/nav'
+function App () {
+    const{ isLoading, isAuthenticated, error, loginWithRedirect: login, logout: auth0Logout, user } = useAuth0();
+    const signup = () =>
+    login({ authorizationParams: { screen_hint: "signup" } });
+    const logout = () =>
+    auth0Logout({ logoutParams: { returnTo: window.location.origin } });
 
+    if (isLoading)  <h2>Heloo</h2>
 
-// function App() {
-//   const[task, setTask] = useState("");
-//   const[taskList, setTaskList] = useState([]);
-
-//   const handleSubmit = () => {
-//     if (task.trim() ==="") return;
-//     const newTask = {
-//       id: Date.now(),
-//       text: task,
-//     };
-//     setTaskList([...taskList, newTask]);
-//     setTask("");
-//   }
- 
-//   setTaskList([...taskList, newTask]);
-//   setTask("");
- 
-//   return (
-//     <>
-// <h1>Todo2</h1>
-// <div>
-//   <lable>
-//     <input type="text" placeholder="Add" value={task} onChange={(e) => setTask(e.target.value)} />
-//     <button onClick={handleSubmit}> {isEditing ? "updates" : "+"} </button>
-//   </lable>
-// </div>
-//   <ul>
-//   {taskList.map((item) => (
-//     <li key={item.id}>{item.text}
-//     <button onClick={() => handleEdit(item.id)}>Edit</button></li>
-//   ))}
-// </ul>
- 
-//     </>
-//   )
-// }
-
-// export default App;
+    return isAuthenticated ? (
+        <>
+            {/*  */}
+            <pre><Path/></pre>
+        </>
+    ) : (
+        <>
+            {error && <p>Error: {error.message}</p>}
+            <button style={{justifyContent:"center"}} onClick={signup}>Sign Up</button>
+            <button onClick={login}>Log In</button>
+        </>
+    );
+}
+export default App;

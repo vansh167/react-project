@@ -1,13 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/nav.css';
-
+import { useAuth0 } from '@auth0/auth0-react';
 const Header = () => {
+        const{logout: auth0Logout, user } = useAuth0();
+    
     const [darkMode, setDarkMode] = useState(false);
-
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
     };
+        const logout = () =>
+    auth0Logout({ logoutParams: { returnTo: window.location.origin } });
 
     return (
         <nav className={`navbar ${darkMode ? 'dark' : 'light'}`}>
@@ -23,6 +26,7 @@ const Header = () => {
             </div>
 
             {/* Toggle Button */}
+            <button onClick={logout}>Logout</button>
             <button onClick={toggleDarkMode} className="mode-toggle">
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
             </button>
